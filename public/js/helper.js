@@ -5,7 +5,7 @@ function secondsToHuman(seconds)
     var numhours = Math.floor(((seconds % 31536000) % 86400) / 3600);
     var numminutes = Math.floor((((seconds % 31536000) % 86400) % 3600) / 60);
     var numseconds = (((seconds % 31536000) % 86400) % 3600) % 60;
-    return numyears + " years " +  numdays + " days " + numhours + " hours " + numminutes + " minutes " + numseconds.toFixed() + " seconds";
+    return numyears + "y " +  numdays + "d " + numhours + "h " + numminutes + "m " + numseconds.toFixed() + "s";
 }
 
 function byteToHuman(bytes) {
